@@ -1,0 +1,114 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.footer {
+  padding: 5rem 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+    @include m.tablet { 
+      max-width: 80%;
+    }
+    @include m.desktop { 
+      max-width: 70%;
+    }
+  }
+
+  &__heading {
+    font-family: v.$secondaryFont;
+    font-size: 3rem;
+    @include m.tablet { 
+      font-size: 4rem;
+    }
+  }
+
+  &__text {
+    @include m.tablet {
+      max-width: 85%;
+    }
+    @include m.desktop {
+      max-width: 60%;
+    }
+  }
+
+  &__btn {
+    margin-top: 1rem;
+    text-decoration: none;
+    padding: 1.2rem 2rem;
+    background-color: v.$btnC;
+    color: v.$black;
+    transition: all 250ms ease;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
+
+  &__box {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: v.$bgGray;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  &__name {
+    font-family: v.$secondaryFont;
+    font-size: 2rem;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1rem;
+    @include m.desktop { 
+      gap: 2rem;
+    }
+  }
+
+  &__icon {
+    background-color: v.$white;
+    color: v.$black;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 250ms ease;
+    &:hover {
+      
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      width: 300%;
+      height: 80%;
+      background-color: v.$black;
+      transform: rotate(50deg);
+      top: 0;
+      left: -20rem;
+      transition: all .7s ease;
+    }
+    &:hover::after{
+      left: 10rem;
+    }
+  }
+
+  &__attribution {
+    display: none;
+    @include m.desktop { 
+      padding: 1rem;
+      font-size: 1.4rem;
+      background-color: v.$bgGray;
+      display: block;
+      text-align: center;
+    }
+  }
+}
