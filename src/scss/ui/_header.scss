@@ -59,6 +59,10 @@
     align-items: center;
     justify-items: center;
 
+    @include m.tablet {
+      @include m.grid(3,2rem);
+    }
+
     @include m.desktop {
       @include m.grid(6,2rem);
       justify-items: start;
