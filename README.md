@@ -12,12 +12,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Design preview for the 3-column preview card component challenge](./design/desktop-preview.jpg)
+![Design preview for the Web Developer Portfolio challenge](./design/desktop-preview.jpg)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/3-column-preview-card-component-solution-with-grid-and-flex-yVdB1tbGS)
-- Live Site URL: [Live Site URL](https://3-column-preview-card-component0001.netlify.app/)
+- Solution URL: [Solution URL](https://www.codewell.cc/challenges/web-developer-portfolio--617d4897a383e41090a3e46f/solution/61da90b26da8ba3fac6b00dd)
+- Live Site URL: [Live Site URL](https://codwell-webdeveloper-challenge.netlify.app/)
 
 ### Built with
 - SASS
